@@ -1,0 +1,12 @@
+{
+  "auto_gen": false,
+  "cleanup_mode": "conservative",
+  "cell_size": 64,
+  "density": "dense",
+  "palettes": {
+    "stone_mix": ["cobblestone","mossy_cobblestone","stone_bricks","cracked_stone_bricks","andesite"],
+    "plaster": ["white_concrete_powder","calcite","diorite"],
+    "timber": ["stripped_spruce_log","stripped_dark_oak_log","stripped_oak_log"],
+    "roof_accents": ["nether_brick","mud_bricks","deepslate_tiles"]
+  }
+}

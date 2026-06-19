@@ -1,7 +1,8 @@
-# Load: set gamerules and kick off initial city generation
+# Load: set gamerules and provide quick instructions
 gamerule doMobSpawning false
 gamerule mobGriefing false
 gamerule doImmediateRespawn false
-# Tell players about the new dimension
-tellraw @a {"rawtext":[{"text":"Medieval City datapack loaded. Use /execute in medieval:city run tp <player> 0 80 0 to enter the medieval dimension."}]}
-# We don't auto-run heavy generation to avoid server lag on /reload.
+# Setup scoreboards and state if needed
+function medieval:setup_scoreboards
+# Inform players
+tellraw @a {"rawtext":[{"text":"Medieval City enhanced datapack loaded. Use /function medieval:generate/city_center to generate a sample city or /function medieval:generate/random_building to place a building."}]}

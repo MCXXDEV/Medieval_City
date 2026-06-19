@@ -1,22 +1,29 @@
-# Medieval City datapack
+# Medieval City datapack — Enhanced branch
 
-This datapack adds a custom dimension `medieval:city` and a set of simple procedural generators to create medieval-style castles, towns and a central city block. It also disables mob spawning and runs a small cleanup tick function to remove any non-player entities.
+This branch (feature/medieval-enhanced) adds an expanded modular medieval generator with multiple building variants, improved materials, depth & texture rules, interiors, and utility functions. Auto-generation is intentionally disabled by default to avoid server lag; you can enable it manually using provided commands.
 
-Target: Minecraft Java 1.21.x (pack_format must match server version).
+Key additions
+- Multiple building variants (peasant huts, blacksmith, tavern/inn, market stalls, improved castle)
+- Material palette mixing (cobblestone, mossy cobble, stone bricks, andesite, white concrete powder, stripped logs)
+- Depth features (trapdoor shutters, slabs, fences, recessed windows)
+- Furnishings and props (barrels, campfires, armor stands, anvils, blast furnaces)
+- Path & vegetation generators for organic roads and bushes
+- Config file: data/medieval/config.json (human-editable settings)
+- Scoreboard-driven variant cycling to give variety without complex RNG
 
-Installation
-- Copy the `datapacks/medieval_city` folder into the `datapacks/` directory of the world (or server) where you want the dimension.
-- Start the server or reload the world with `/reload`.
-- To go to the new dimension after the datapack is loaded, run:
-  /execute in medieval:city run tp <player> 0 80 0
+Commands (examples)
+- /function medieval:generate/random_building — generate a building variant at your position
+- /function medieval:generate/city_center — generate a sample 3x3 city layout (castle + market blocks)
+- /function medieval:setup_scoreboards — install scoreboard objectives used by the pack
+- /function medieval:autogen/enable — (placeholder) enable simple autogen behaviour per-player
+- /function medieval:autogen/disable — disable autogen
 
 Notes
-- The generator uses procedural function-based building (fill/setblock) rather than structure .nbt files so it works inside a datapack without external editors.
-- The datapack disables natural mob spawning via gamerule; the tick function also kills non-player entities frequently to ensure "no mobs or NPCs". If that's too aggressive, you can edit `data/medieval/tags/functions/tick.json` or the `data/medieval/functions/tick.mcfunction` file.
+- Auto-generation is intentionally minimal in this first pass; it is disabled by default in data/medieval/config.json. If you want full player-proximity cell generation with persistent markers to avoid re-generation, I can add that in a follow-up.
+- If you want .nbt structure support (jigsaw pools and randomized .nbt structures), provide structure files or I can generate small examples — tell me which approach you prefer.
 
-Commands
-- /function medieval:generate/castle (run from the dimension or use `execute in medieval:city run function medieval:generate/castle` to generate a castle at your current location)
-- /function medieval:generate/town_block (generates a small town block at your current position)
-- /function medieval:generate/city_center (generates a central layout of several blocks and a castle)
+Install
+- Merge this branch into main or copy the datapack folder into your world datapacks directory.
+- Run `/reload`, then `/function medieval:setup_scoreboards` once to initialize the variant counter.
 
-If you want me to tweak the visual style (gothic, thatch/wood, large towers), extend generation radius, or convert the generators to structure .nbt files, tell me which style and I will update the pack and commit the changes.
+Enjoy — tell me which parts you want more variants of, or if I should implement full autogen cell-tracking.

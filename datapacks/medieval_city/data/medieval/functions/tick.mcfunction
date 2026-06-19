@@ -1,3 +1,19 @@
-# Tick: remove non-player living entities that may persist (keeps players, armor stands and several non-living entity types)
-# This is aggressive by design to ensure "no mobs or NPCs" on the server. Edit this to relax behavior.
-execute as @e[type=!player,type=!armor_stand,type=!item,type=!item_frame,type=!boat,type=!minecart,type=!painting,type=!marker,type=!xp_orb,type=!arrow,type=!lightning_bolt] run kill @s
+# Conservative tick cleanup: kills common hostile mob types only. Keeps passive entities like cows, sheep, horses, armor stands.
+# This is run every tick via tags/functions/tick.json but should be safe for SMP.
+execute as @e[type=zombie] run kill @s
+execute as @e[type=husk] run kill @s
+execute as @e[type=drowned] run kill @s
+execute as @e[type=skeleton] run kill @s
+execute as @e[type=stray] run kill @s
+execute as @e[type=wither_skeleton] run kill @s
+execute as @e[type=creeper] run kill @s
+execute as @e[type=spider] run kill @s
+execute as @e[type=cave_spider] run kill @s
+execute as @e[type=witch] run kill @s
+execute as @e[type=phantom] run kill @s
+execute as @e[type=pillager] run kill @s
+execute as @e[type=vindicator] run kill @s
+execute as @e[type=evoker] run kill @s
+execute as @e[type=vex] run kill @s
+execute as @e[type=ravager] run kill @s
+# Keep passive animals and utility entities
