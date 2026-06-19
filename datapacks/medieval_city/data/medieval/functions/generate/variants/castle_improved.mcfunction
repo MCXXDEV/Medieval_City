@@ -9,7 +9,7 @@ fill ~-12 ~1 ~-12 ~12 ~8 ~12 stone_bricks
 # Towers at corners
 fill ~-12 ~1 ~-12 ~-10 ~12 ~-10 stone_bricks
 fill ~10 ~1 ~-12 ~12 ~12 ~-10 stone_bricks
-fill ~-12 ~1 ~10 ~-10 ~12 ~12 stone_bricks
+fill ~-12 ~1 ~10 ~-7 ~12 ~12 stone_bricks
 fill ~10 ~1 ~10 ~12 ~12 ~12 stone_bricks
 # Battlements on top
 fill ~-12 ~8 ~-12 ~12 ~8 ~12 stone_brick_slab

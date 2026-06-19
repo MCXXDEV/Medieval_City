@@ -2,7 +2,7 @@
 # Footprint ~7x7
 fill ~-3 ~ ~-3 ~3 ~4 ~3 air
 # Foundation and lower walls (mixed stone)
-fill ~-3 ~ ~-3 ~3 ~0 ~3 cobblestone
+fill ~-3 ~-1 ~-3 ~3 ~-1 ~3 cobblestone
 fill ~-3 ~1 ~-3 ~3 ~2 ~3 stone_bricks
 # Upper plaster
 fill ~-2 ~3 ~-2 ~2 ~3 ~2 white_concrete_powder
