@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 19,
-    "description": "Medieval City dimension datapack (targeted for Minecraft Java 1.21.x). Generates castles, towns; disables mob spawning."
+    "description": "Medieval City enhanced datapack (Minecraft Java 1.21.x). Adds modular medieval generation, variants, and configurable options."
   }
 }
