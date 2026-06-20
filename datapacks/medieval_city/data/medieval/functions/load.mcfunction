@@ -6,4 +6,4 @@ gamerule mobGriefing false
 gamerule doImmediateRespawn false
 gamerule doTraderSpawning false
 
-tellraw @a {"rawtext":[{"text":"§6Medieval City Datapack Loaded!\n§eUse: /function medieval:teleport/shatterdrealm to enter\n§eOr use structure functions in /function medieval:generate/"}]}
+tellraw @a [{"text":"§6Medieval City Datapack Loaded!\n§eUse: /function medieval:teleport/shatterdrealm to enter\n§eOr use structure functions in /function medieval:generate/"}]

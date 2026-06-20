@@ -8,7 +8,7 @@ Key additions
 - Depth features (trapdoor shutters, slabs, fences, recessed windows)
 - Furnishings and props (barrels, campfires, armor stands, anvils, blast furnaces)
 - Path & vegetation generators for organic roads and bushes
-- Config file: data/medieval/config.json (human-editable settings)
+- Config file: medieval_config.json (human-editable settings)
 - Scoreboard-driven variant cycling to give variety without complex RNG
 
 Commands (examples)
@@ -19,7 +19,7 @@ Commands (examples)
 - /function medieval:autogen/disable — disable autogen
 
 Notes
-- Auto-generation is intentionally minimal in this first pass; it is disabled by default in data/medieval/config.json. If you want full player-proximity cell generation with persistent markers to avoid re-generation, I can add that in a follow-up.
+- Auto-generation is intentionally minimal in this first pass; it is disabled by default in medieval_config.json. If you want full player-proximity cell generation with persistent markers to avoid re-generation, I can add that in a follow-up.
 - If you want .nbt structure support (jigsaw pools and randomized .nbt structures), provide structure files or I can generate small examples — tell me which approach you prefer.
 
 Install
