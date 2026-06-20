@@ -1,3 +1,3 @@
-# Tick: enforce gamerule doMobSpawning false to prevent mobs from spawning
+# Tick: enforce gamerule spawn_mobs false to prevent mobs from spawning
 # This is run every tick via tags/functions/tick.json
-gamerule doMobSpawning false
+gamerule minecraft:spawn_mobs false

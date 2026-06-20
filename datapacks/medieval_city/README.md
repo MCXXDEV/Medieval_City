@@ -1,6 +1,6 @@
-# Medieval City datapack — Enhanced branch
+# Medieval City datapack — Minecraft 1.21.11 (Java Edition)
 
-This branch (feature/medieval-enhanced) adds an expanded modular medieval generator with multiple building variants, improved materials, depth & texture rules, interiors, and utility functions. Auto-generation is intentionally disabled by default to avoid server lag; you can enable it manually using provided commands.
+This datapack targets **Minecraft Java Edition 1.21.11 vanilla** (`pack_format` 94.1).
 
 Key additions
 - Multiple building variants (peasant huts, blacksmith, tavern/inn, market stalls, improved castle)
@@ -23,7 +23,34 @@ Notes
 - If you want .nbt structure support (jigsaw pools and randomized .nbt structures), provide structure files or I can generate small examples — tell me which approach you prefer.
 
 Install
-- Merge this branch into main or copy the datapack folder into your world datapacks directory.
-- Run `/reload`, then `/function medieval:setup_scoreboards` once to initialize the variant counter.
+
+**Copy the `medieval_city` folder — NOT the parent `datapacks` folder.**
+
+Your world's datapacks folder should look like this:
+
+```
+YourWorld/
+  datapacks/
+    medieval_city/          <-- copy THIS folder
+      pack.mcmeta
+      data/
+      medieval_config.json
+      README.md
+```
+
+**Wrong (causes "Non-pack entries: datapacks" error):**
+```
+YourWorld/
+  datapacks/
+    datapacks/              <-- do NOT copy this
+      medieval_city/
+```
+
+**Steps:**
+1. Open your world's `datapacks` folder (click "Open Pack Folder" in the Data Packs screen, or browse to `saves/YourWorldName/datapacks/`).
+2. Copy the **`medieval_city`** folder from this repo into that folder.
+3. Confirm `pack.mcmeta` is directly inside `medieval_city`, not buried in another subfolder.
+4. In-game, open **Select Data Packs** and move `medieval_city` from Available to Selected.
+5. Run `/reload`, then `/function medieval:setup_scoreboards` once to initialize the variant counter.
 
 Enjoy — tell me which parts you want more variants of, or if I should implement full autogen cell-tracking.
