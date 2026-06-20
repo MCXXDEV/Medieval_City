@@ -1,5 +1,4 @@
 # Barracks: military outpost with guards and storage
-# Footprint ~18x16
 fill ~-9 ~ ~-8 ~9 ~7 ~8 air
 fill ~-9 ~0 ~-8 ~9 ~0 ~8 stone
 # Main barracks building

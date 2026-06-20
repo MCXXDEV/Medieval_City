@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 19,
-    "description": "Medieval City enhanced datapack (Minecraft Java 1.21.x). Adds modular medieval generation, variants, and configurable options."
+    "pack_format": 13,
+    "description": "Medieval City Datapack - Villages, Outposts, Structures, and Custom Dimension"
   }
 }

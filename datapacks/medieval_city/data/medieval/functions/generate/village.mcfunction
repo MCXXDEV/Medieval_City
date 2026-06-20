@@ -4,13 +4,13 @@ fill ~-15 ~ ~-15 ~15 ~12 ~15 air
 # Foundation paths
 fill ~-12 ~0 ~-12 ~12 ~0 ~12 coarse_dirt
 # Simple houses (4 per village)
-execute positioned ~-8 ~0 ~-8 run function medieval:generate/variants/peasant_hut_1
-execute positioned ~8 ~0 ~-8 run function medieval:generate/variants/peasant_hut_2
-execute positioned ~-8 ~0 ~8 run function medieval:generate/variants/mudbrick_house
-execute positioned ~8 ~0 ~8 run function medieval:generate/variants/deepslate_roof_house
+execute positioned ~-8 ~0 ~-8 run setblock ~ ~ ~ oak_wood
+execute positioned ~8 ~0 ~-8 run setblock ~ ~ ~ oak_wood
+execute positioned ~-8 ~0 ~8 run setblock ~ ~ ~ oak_wood
+execute positioned ~8 ~0 ~8 run setblock ~ ~ ~ oak_wood
 # Village well at center
-execute positioned ~0 ~0 ~0 run function medieval:generate/decor/well
-# Spawn villagers (farmers, librarian, cleric, blacksmith) with name tags
+execute positioned ~0 ~0 ~0 run setblock ~ ~ ~ water
+# Spawn villagers with name tags
 execute positioned ~-6 ~1 ~-6 run function medieval:generate/npcs/spawn_farmer
 execute positioned ~6 ~1 ~-6 run function medieval:generate/npcs/spawn_librarian
 execute positioned ~-6 ~1 ~6 run function medieval:generate/npcs/spawn_cleric

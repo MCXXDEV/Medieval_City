@@ -1,5 +1,4 @@
 # Remote stable complex: stable with adjacent house
-# Footprint ~20x14
 fill ~-10 ~ ~-7 ~10 ~5 ~7 air
 fill ~-10 ~0 ~-7 ~10 ~0 ~7 oak_wood
 # Stable building
@@ -17,7 +16,6 @@ fill ~1 ~5 ~-5 ~9 ~5 ~5 dark_oak_stairs
 # House door
 fill ~5 ~1 ~-4 ~5 ~2 ~-4 air
 setblock ~5 ~1 ~-4 spruce_door
-# Stable keeper
+# NPCs
 execute positioned ~-5 ~1 ~1 run function medieval:generate/npcs/spawn_blacksmith
-# House resident
 execute positioned ~5 ~1 ~0 run function medieval:generate/npcs/spawn_librarian

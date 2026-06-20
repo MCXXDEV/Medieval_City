@@ -1,8 +1,4 @@
 # Random structure placer: spawns random structures at various locations
-# Usage: call this multiple times at different positions to populate the realm
-# This function should be called via a central generation loop
-
-# Example placement grid (call this from a higher-level function)
 # Scattered outposts around the realm
 execute positioned 100 0 100 run function medieval:generate/structures/outpost
 execute positioned -150 0 80 run function medieval:generate/structures/isolated_house

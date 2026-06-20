@@ -1,5 +1,4 @@
 # Trading post: small merchant outpost with NPCs
-# Footprint ~14x10
 fill ~-7 ~ ~-5 ~7 ~6 ~5 air
 fill ~-7 ~0 ~-5 ~7 ~0 ~5 cobblestone
 # Main building
