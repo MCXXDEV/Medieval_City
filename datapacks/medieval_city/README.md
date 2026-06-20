@@ -1,6 +1,6 @@
-# Medieval City datapack — Enhanced branch
+# Medieval City datapack — Minecraft 1.21.11 (Java Edition)
 
-This branch (feature/medieval-enhanced) adds an expanded modular medieval generator with multiple building variants, improved materials, depth & texture rules, interiors, and utility functions. Auto-generation is intentionally disabled by default to avoid server lag; you can enable it manually using provided commands.
+This datapack targets **Minecraft Java Edition 1.21.11 vanilla** (`pack_format` 94.1).
 
 Key additions
 - Multiple building variants (peasant huts, blacksmith, tavern/inn, market stalls, improved castle)
