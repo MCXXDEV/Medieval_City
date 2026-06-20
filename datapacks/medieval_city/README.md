@@ -12,11 +12,17 @@ Key additions
 - Scoreboard-driven variant cycling to give variety without complex RNG
 
 Commands (examples)
+- /trigger shatteredRealm — teleport to the Shattered Realm custom dimension
 - /function medieval:generate/random_building — generate a building variant at your position
 - /function medieval:generate/city_center — generate a sample 3x3 city layout (castle + market blocks)
 - /function medieval:setup_scoreboards — install scoreboard objectives used by the pack
 - /function medieval:autogen/enable — (placeholder) enable simple autogen behaviour per-player
 - /function medieval:autogen/disable — disable autogen
+
+Shattered Realm dimension
+- Dimension ID: shatteredrealm:shatteredrealm
+- Enter with: /trigger shatteredRealm
+- Return to overworld: /execute in minecraft:overworld run tp @s ~ ~ ~
 
 Notes
 - Auto-generation is intentionally minimal in this first pass; it is disabled by default in medieval_config.json. If you want full player-proximity cell generation with persistent markers to avoid re-generation, I can add that in a follow-up.

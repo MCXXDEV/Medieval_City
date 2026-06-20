@@ -3,5 +3,7 @@
 scoreboard objectives add medieval_variant dummy
 scoreboard players set global medieval_variant 0
 scoreboard objectives add medieval_autogen dummy
-scoreboard players set global_autogen medieval_autogen 0
-tellraw @a {text:'Medieval City: scoreboards initialized (medieval_variant, medieval_autogen).'}
+scoreboard players set global medieval_autogen 0
+scoreboard objectives add shatteredRealm trigger
+scoreboard players enable @a shatteredRealm
+tellraw @a {text:'Medieval City: scoreboards initialized (medieval_variant, medieval_autogen, shatteredRealm).'}
